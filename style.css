@@ -1,0 +1,2288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body{
+    margin: 0 50px; /* remove later */
+    background-color: antiquewhite; 
+}
+.one{
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0;
+    z-index: 12;
+}
+.nav{
+    width: 100%;
+    /* background-color: grey;  */
+    /* remove later */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    border-bottom: 6px solid chocolate;
+    z-index: 0;
+}
+.nav .logo h1{
+    font-weight: 620;
+    color: black;
+}
+.nav .logo b{
+    color: chocolate;
+}
+.nav span{
+    color: grey;
+    padding-left: 20px;
+    font-size: 17px;
+}
+#listing{
+    display: flex;
+    list-style: none;
+}
+.nav ul li{
+    padding-right: 30px;
+}
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 580;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.nav ul li a.active{
+    color: sandybrown;
+    font-weight: 680;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav #times{
+    color: blue;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+#icon{
+    width: 30px;
+    height: 30px;
+    /* font-size: 395px; */
+    cursor: pointer;
+    /* padding-right: 10px; */
+    display: none;
+}
+#toggle{
+    display: none;
+}
+.login{
+    background-color: grey;
+    color: white;
+    padding: 6px 15px;
+    font-weight: 560;
+    cursor: pointer;
+    margin-right: 7px;
+    border-radius: 6px;
+    border: 2px solid rgb(99, 95, 95);
+    transition: border 0.5s;
+}
+.signup{
+    background-color: chocolate;
+    color: black;
+    padding: 6px 15px;
+    font-weight: 560;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 2px solid rgb(99, 95, 95);
+    transition: border 0.5s;
+}
+button:hover{
+    border: 2px solid whitesmoke;
+}
+.two{
+    background-image: url("images/food7.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 600px;
+    box-sizing: border-box;
+}
+.two .image img{
+    height: 470px;
+    width: 470px;
+    border-radius: 25px;
+    opacity: 0.73;
+}
+.two .info1{
+    line-height: 55px;
+    width: 100%;
+    width: max-content;
+}
+.two .info1 p{
+    font-size: 40px;
+    font-weight: 550;
+    padding-left: 40px;
+    padding-top: 30px;
+    color: wheat;
+    text-shadow: 2px 2px 4px black;
+    /* display: block; */
+}
+.two .info1 span{
+    display: block;
+    color: rgb(11, 146, 11);
+}
+.three{
+    height: 65px;
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 105px;
+    z-index: 12;
+    border-bottom: 7px solid chocolate;
+}
+.three .search-button{
+    display: flex;
+    justify-content: center; 
+}
+.three .search-button input[type="search"],
+.three .search-button input[type="submit"]{
+    margin-top: 10px;
+}
+.three .search-button input[type="search"]{
+    width: 450px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    background-color: rgb(241, 241, 240);
+    border: 1px solid white;
+    margin-right: 15px;
+}
+.three .search-button input[type="search"]::placeholder{
+    color: rgb(122, 72, 36);
+}
+.three .search-button input[type="search"]:focus{
+    border: 1px solid rgb(99, 95, 95);
+    outline: none;
+    background-color: white;
+    color: black;
+}
+.three .search-button input[type="submit"]{
+    width: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 4px 15px;
+    border-radius: 8px;
+    background-color: rgb(241, 241, 240);
+    border: 1px solid rgb(122, 72, 36);
+    margin-right: 15px;
+    transition: 1s;
+}
+.three .search-button input[type="submit"]:hover{
+    border: 1px solid rgb(99, 95, 95);
+    outline: none;
+    background-color: rgb(122, 72, 36);
+    color: whitesmoke;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+}
+
+ .four{
+    /* opacity: 0.9; */
+     background-color: rgb(63, 18, 22);
+     height: 900px;
+     width: 100%;
+ }
+ .four .images{
+     width: 700px;
+     height: 50px;
+     background-color: rgb(252, 250, 250);
+ }
+ .four .images img{
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-top: 140px;
+    margin-bottom: 10px;
+ }
+ .four .images #img1{
+     z-index: 7;
+     position: relative;
+ }
+ .four .images #img2{
+    position: absolute;
+    top: 830px;
+    left: 380px;
+    z-index: 5;
+}
+.four .images #img2 div{
+    height: 15px;
+     width: 1px;
+     margin-top: 11px;
+     border: 1px dotted white;
+     background-color: white;
+     margin-left: 150px;
+}
+.four .images #img2 p{
+    margin-top: 7px;
+    color: white;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* z-index: 6; */
+}
+.four .images #img2 p span{
+    color: chocolate;
+    display: block;
+    padding-left: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+ .four .images #vertical{
+     margin-top: 20px;
+     height: 150px;
+     width: 3px;
+     z-index: 2;
+ }
+ .four .images .vertical{
+     height: 15px;
+     width: 1px;
+     margin-bottom: 11px;
+     border: 1px dotted white;
+     background-color: white;
+     margin-left: 150px;
+ }
+ .four .images h2{
+    color: chocolate;
+    text-transform: capitalize;
+    font-size: 35px;
+    /* text-align: center; */
+    text-shadow: 2px 2px 4px black;
+    padding-top: 7px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 3px;
+    line-height: 50px;
+    padding-left: 20px;
+}
+.four .images h2 .more{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    text-transform: none;
+    font-size: inherit;
+    text-shadow: 2px 2px 4px brown;
+    padding-right: 200px;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 10;
+}
+.four .images h2 .symbol{
+    font-size: 30px;
+    margin-left: 5px;
+    word-spacing: 5px;
+ /* .four .images #img3{ */
+    /* position: absolute; */
+    /* top: 1130px; */
+    /* left: 300px; */
+/* } */
+}
+.four .images input{
+    margin-top: 25px;
+    margin-right: 6px;
+    margin-left: 930px;
+    padding: 10px 22px;
+    font-size: 20px;
+    text-transform: capitalize;
+    /* border: 1px solid rgb(63, 18, 22); */
+    border-radius: 20px;
+    border: none;
+    transition: 0.6s;
+}
+.four .images .input2{
+    color: black;
+    background-color: rgb(231, 152, 96);
+    cursor: pointer;
+}
+.four .images .input2:hover{
+    color: white;
+    background-color:rgb(122, 72, 36);
+    cursor: pointer;
+}
+.four .images .input1::placeholder{
+    color: rgb(122, 72, 36);
+}
+.four .images .input1{
+    border: 1px solid rgb(63, 18, 22);
+    outline: none;
+    background-color: white;
+    border-radius: 0px;
+    color: black;
+}
+.four .images .input1:focus{
+    outline: none;
+    background-color: white;
+    color: black;
+}
+.four .images .button-info{
+    height: 80px;
+}
+.four .images .button-info img{
+    height: 40px;
+    width: 40px;
+}
+.four .images .button-info #location{
+    position: absolute;
+    top: 1433px;
+    margin-left: 885px;
+}
+.four .images .button-info #call{
+    position: absolute;
+    top: 1500px;
+    margin-left: 885px;
+}
+.right-info1{
+    height: 520px;
+    width: 790px;
+    background-color: white;
+    z-index: 1;
+}
+.right-info2{
+    height: 510px;
+    width: 700px;
+    background-color: black;
+    z-index: 1;
+}
+.four .right-info{
+    height: 500px;
+    width: 620px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    left: 678px;
+    top: 1030px;
+    border-top-left-radius: 50px;
+    z-index: 0;
+    /* transform: rotate(-20deg); */
+}
+.four .right-info #customer1{
+    width: 200px;
+    height: 330px;
+}
+.four .right-info #customer2{
+    width: 200px;
+    height: 270px;
+}
+.four .right-info #customer3{
+    width: 200px;
+    height: 230px;
+}
+.four .text{
+    width: 680px;
+    height: 800px;
+    margin-top: 70px;
+    position: absolute;
+    top: 1000px;
+    left: 568px;
+    /* background-image: url("images/service8.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 100px;
+    /* transform: rotate(20deg); */
+    /* z-index: -1; */
+}
+.four .text #road{
+    /* z-index: 1; */
+    height: 100px;
+    width: 200px;
+}
+
+.four #summary .logo{
+    margin-left: 50px;
+    font-size: 15px;
+    position: absolute;
+    top: 1630px;
+}
+.four #summary .logo h1{
+    font-weight: 620;
+    color: white;
+}
+.four #summary .logo b{
+    color: chocolate;
+}
+.four #summary span{
+    color: grey;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+.four #info{
+    position: absolute;
+    left: 800px;
+    width: 690px;
+    text-align: left;
+    top: 820px;
+    color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.four #last-logo{
+    width: 650px;
+    height: 200px;
+    position: absolute;
+    left: 727px;
+    top: 1030px;
+}
+
+.four #last-logo2{
+    width: 700px;
+    height: 230px;
+    position: absolute;
+    left: 748px;
+    top: 812px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+}
+/* .four #info span{ */
+    /* display: block; */
+/* } */
+.five{
+    width: 100%;
+    /* background-color: white; */
+    background-image: url("images/food20.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    height: 1000px;
+    /* margin-bottom: 300px; */
+}
+.five .food-list{
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(114, 39, 39, 0.7);
+    transition: 1s;
+}
+.five .food-list:hover{
+    background-color: rgba(77, 28, 9, 0.7);
+}
+.five .food-list .menu{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 1px solid white;
+    background-color: rgb(114, 39, 39);
+    position: sticky;
+    top: 155px;
+    transition: 1s;
+}
+.five .food-list .menu:hover{
+    color: wheat;
+    letter-spacing: 3px;
+}
+.five .food-list .grid-container{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+   padding: 30px 20px;
+}
+.five .food-list .grid-container >div{
+    background-color: white;
+    border-radius: 18px; 
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 15px;
+}
+.five .food-list .grid-container >div img{
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    transition: 1s;
+}
+.five .food-list .grid-container >div img:hover{
+   height: 245px;
+}
+.six{
+    margin-top: 70px;
+    height: 800px;
+    color: white;
+    background-image: url("images/ordering.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.six h2{
+    text-align: center;
+    color: rgb(53, 45, 45);
+    padding-top: 170px;
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.six .procedures{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 260px;
+}
+.six .procedures .call{
+    height: 300px;
+    width: 250px;
+}
+.six .procedures .call img{
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+    opacity: 0.4;
+    border-radius: 90px;
+    position: relative;
+    left: 75px;
+}
+.six .procedures .call h3{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 18px;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgb(15, 14, 14);
+}
+.six .procedures .location{
+    height: 300px;
+    width: 275px;
+    line-height: 45px;
+}
+.six .procedures .location img{
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+    opacity: 0.4;
+    border-radius: 90px;
+    position: relative;
+    left: 75px;
+}
+.six .procedures .location h3{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 18px;
+    color: black;
+    font-weight: 600;
+}
+.six .procedures .location p{
+    line-height: 24px;
+    word-spacing: 2px;
+    font-size: 22px;
+    color: black;   
+}
+.six .procedures .pick{
+    height: 300px;
+    width: 275px;
+    line-height: 55px;
+    color: black;
+}
+.six .procedures .pick img{
+    width: 130px;
+    height: 100px;
+    margin-top: 20px;
+    opacity: 0.7;
+    position: relative;
+    left: 75px;
+    border-radius: 30px;
+}
+.six .procedures .pick h3{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 18px;
+    font-weight: 600;
+}
+.six .procedures .pick p{
+    line-height: 24px;
+    word-spacing: 2px;
+    font-size: 22px;
+}
+.six .procedures .recieved{
+    height: 300px;
+    width: 345px;
+    line-height: 45px;
+    color: black;
+}
+.six .procedures .recieved img{
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+    opacity: 0.7;
+    position: relative;
+    border-radius: 30px;
+    left: 75px;
+}
+.six .procedures .recieved h3{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 18px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.six .procedures .recieved p{
+    line-height: 24px;
+    word-spacing: 2px;
+    font-size: 22px;  
+}
+.seven{
+    height: 270px;
+    width: 100%;
+    background-color: rgb(209, 97, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seven .subscribe h1{
+    color: white;
+    font-size: 43px;
+    letter-spacing: 4px;
+    line-height: 45px;
+}
+.seven .subscribe h1 span{
+    display: block;
+    font-weight: lighter;
+    font-size: 21px;
+    letter-spacing: 1px;
+    color: black;
+    padding-left: 22px;
+    /* word-spacing: normal; */
+}
+.seven select,
+.seven input,
+.seven button{
+    padding: 20px 20px;
+    border: none;
+}
+.seven select:focus,
+.seven input:focus,
+.seven button:focus{
+    border: none;
+    outline: none;
+}
+.seven button{
+    background-color: rgb(44, 28, 28);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 1s;
+}
+.seven button:hover{
+    background-color: rgb(71, 56, 56);
+    /* color: black; */
+}
+.seven #checkbox{
+    display: block;
+    margin: 20px 8px;
+}
+.seven #checkbox input{
+    height: 24px;
+    width: 24px;
+}
+.seven #checkbox span{
+    color: rgb(228, 188, 188);
+}
+.seven #checkbox span a{
+    color: white;
+}
+.eight{
+    height: 1400px;
+    width: 100%;
+    background-image: url("images/eat2.jpg");
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color: white; */
+}
+.eight .eight-heading h2{
+    text-align: center;
+    padding-top: 165px;
+    padding-left: 130px;
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 1px grey;
+}
+#question{
+    color: chocolate;
+    font-size: 85px;
+    transform: rotate(20deg);
+    display: inline-block;
+}
+.eight .services-list .service-one{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+.eight .services-list .service-one .texts{
+    width: 800px;
+    height: 200px;
+    margin-top: 70px;
+    opacity: 1;
+}
+.eight .services-list .service-one .texts h3{
+    font-size: 30px;
+    text-align: right;
+    padding-top: 35px;
+    padding-left: 55px;
+    color: black;
+    text-transform: capitalize;
+    text-shadow: 1px 2px 1px grey;
+    opacity: 1;
+}
+.eight .services-list .service-one .texts p{
+    padding-left: 25px;
+    padding-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+    color: rgb(218, 208, 208);
+    text-shadow: 1px 1px 2px rgb(10, 8, 24);
+    font-size: 26px;
+    /* text-align: justify; */
+    /* text-shadow: 2px px 1px grey; */
+} 
+.eight .services-list .service-one .image1{
+    background-image: url("images/about\ us9.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+    margin-top: 2px;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+.eight .services-list .service-two{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.eight .services-list .image2{
+    background-image: url("images/delivery12.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.eight .services-list .texts2{
+    width: 800px;
+    height: 200px;
+    opacity: 1;   
+}
+.eight .services-list .texts2 h3{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 35px;
+    padding-right: 55px;
+    color: black;
+    text-transform: capitalize;
+    text-shadow: 1px 2px 1px grey;
+    opacity: 1; 
+}
+.eight .services-list .texts2 p{
+    padding-right: 25px;
+    padding-top: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+    /* text-shadow: 1px 1px 2px wheat; */
+    font-size: 26px;
+    color: rgb(63, 51, 51);
+    text-shadow: 1px 1px 2px rgb(250, 248, 248);
+    /* text-align: justify; */
+    /* text-shadow: 2px px 1px grey;     */
+}
+.eight .services-list .service-three{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.eight .services-list .service-three .texts3{
+    width: 800px;
+    height: 200px;
+    margin-top: 41px;
+    opacity: 1;
+}
+.eight .services-list .service-three .texts3 h3{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-left: 55px;
+    color: black;
+    text-transform: capitalize;
+    text-shadow: 1px 2px 1px grey;
+    opacity: 1;
+}
+.eight .services-list .service-three .texts3 p{
+    padding-left: 35px;
+    padding-top: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+    /* text-shadow: 1px 1px 2px wheat; */
+    font-size: 26px;
+    color: rgb(63, 51, 51);
+    text-shadow: 1px 1px 2px rgb(250, 248, 248);
+    /* text-align: justify; */
+    /* text-shadow: 2px px 1px grey; */
+} 
+.eight .services-list .image3{
+    background-image: url("images/catering1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 220px;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+.nine{
+    height: 1300px;
+    width: 100%;
+    background-color:  rgb(184, 121, 63);
+}
+.nine .about-heading{
+    border-bottom: 4px solid rgb(221, 217, 217);
+    height: 80px;
+    width: 100%;
+    background-color: rgb(175, 105, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 160px;
+    z-index: 1;
+}
+.nine .about-heading h3{
+    text-transform: capitalize;
+    color: rgb(247, 241, 238);
+    font-size: 30px;
+    /* margin-top: 0px; */
+}
+.nine .about-info{
+    display: flex;
+    justify-content: space-between;
+    height: 520px;
+}
+.nine .about-info .logo{
+position: absolute;
+left: 680px;
+margin-top: 40px;
+z-index: 0;
+}
+.nine .about-info .logo img{
+    height: 100px;
+    width: 130px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 20px;
+}
+.nine .about-info .image img{
+    height: 300px;
+    width: 480px;
+    margin: 205px 70px;
+    border: 1px solid wheat;
+    border-radius: 5px;
+}
+.nine .about-info .text{
+    width: 800px;
+    margin-top: 180px;
+    margin-right: 40px;
+    /* margin: 200px 40px; */
+    padding-right: 40px;
+    text-align: justify;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nine .about-info .text p{
+    color: rgb(56, 50, 94);
+}
+.nine .about-info .text h1{
+    color: rgb(56, 50, 94);
+    text-transform: capitalize;
+    font-size: 30px;
+    padding-bottom: 40px;
+    /* text-align: center; */
+}
+.nine .about-info .text h1 span{
+    color: rgb(213, 219, 206);
+    text-transform: capitalize;
+}
+.nine #about{
+    padding: 40px 50px;
+    text-align: justify;
+    font-size: 22px;
+    color: rgb(56, 50, 94);
+    margin-top: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nine .about-info2{
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    /* margin-top: 0; */
+}
+.nine .about-info2 .image2 img{
+    height: 360px;
+    width: 480px;
+    margin: 0px 70px;
+    border: 1px solid wheat;
+    border-radius: 5px;
+}
+.nine .about-info2 .text2{
+    width: 800px;
+    margin-top: 0px;
+    margin-right: 40px;
+    /* margin: 200px 40px; */
+    padding-right: 40px;
+    text-align: justify;
+    font-size: 22px;
+    color: rgb(56, 50, 94);
+    font-family: 'Times New Roman', Times, serif;
+}
+.nine .about-info2 .text2 h1 span{
+    color: rgb(213, 219, 206);
+    text-transform: capitalize;
+}
+.nine .about-info2 .text2 .messages{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    /* justify-content: space-between; */
+}
+.nine .about-info2 .text2 .messages img{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 42px;
+    cursor: pointer;
+}
+.nine .about-info2 .text2 .messages p{
+    color: rgb(56, 50, 94);
+    cursor: pointer;
+}
+.ten{
+    background-image: url("images/food21.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 870px;
+    margin-top: 70px;
+}
+.ten .testimony1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.ten .testimony1 div{
+    height: 545px;
+    width: 400px;
+    background-color: white;
+    border-bottom: none;
+    z-index: 0;
+    margin-top: 175px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 10px;
+}
+.ten .testimony1 img{
+    height: 250px;
+    width: 250px;
+    border-radius: 200px;
+    margin-top: 5px;
+    margin-left: 75px;
+    opacity: 1;
+}
+.ten .testimony1 p{
+    padding-top: 1px;
+    padding-left: 25px;
+    padding-right: 26px;
+    text-align: justify;
+}
+.ten .testimony1 #first-text{
+padding-top: 60px;
+}
+.ten .testimony1 #second-text{
+    padding-top: 15px;
+    }
+.ten .testimony1 #more-button{
+    padding: 7px 13px;
+    background-color: rgb(4, 1, 19);
+    color: white;
+    margin-left: 220px;
+    border-radius: 9px;
+    margin-top: 6px;
+    display: block;
+}
+.ten .testimony1 #more-button:hover{
+    background-color: rgb(4, 2, 12);
+    cursor: pointer;
+    color: rgb(209, 202, 202);
+}
+.eleven{
+    height: 1400px;
+    width: 100%;
+    margin-top: 0px;
+    background-color: rgb(4, 1, 19);
+}
+.eleven .diet-tips{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(4, 1, 19);
+    margin-top: 150px;
+    display: flex;
+}
+.eleven .diet-tips img{
+    margin-top: 160px;
+    margin-left: 180px;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+}
+.eleven .diet-tips p{
+    color: white;
+    width: 500px;
+    justify-content: end;
+    padding-left: 30px;
+    padding-top: 210px;
+    text-align: justify;
+}
+.eleven .diet-tips p a{
+    text-decoration: none;
+}
+.eleven .diet-tips p a:hover{
+    color: blue;
+}
+.eleven .footer-list{
+    display: flex;
+    justify-content: space-around;
+    text-transform: capitalize;
+    margin-top: 170px;
+}
+.eleven .footer-list div{
+    color: rgb(168, 153, 153);
+    cursor: pointer;
+}
+.eleven .footer-list div ul{
+    list-style-type: none;
+    line-height: 50px;
+}
+.eleven .footer-list div ul #images{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 160px;
+}
+.eleven .footer-list div ul #heading{
+    font-weight: 600;
+    font-size: 30px;
+    cursor: none;
+}
+.eleven .end{
+    margin-top: 80px;
+}
+.eleven .end .logo{
+    margin-left: 30px;
+}
+.eleven .end .logo h1{
+    font-weight: 620;
+    color: white;
+}
+.eleven .end .logo b{
+    color: chocolate;
+}
+.eleven .end span{
+    color: grey;
+    padding-left: 20px;
+    font-size: 17px;
+}
+.eleven .end ul{
+    list-style-type: none;
+    color: rgb(204, 191, 191);
+    text-transform: capitalize;
+    display: flex;
+    margin-right: 11px;
+    justify-content: center;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+.eleven .end ul li{
+    margin-right: 12px;
+}
+.eleven .copyright-info p{
+    color: rgb(99, 93, 93);
+    text-transform: capitalize;
+    margin-top: 60px;
+    text-align: center;
+}
+.eleven .copyright-info p a{
+    color: rgb(99, 93, 93);
+}
+
+#showLogin{
+    position: fixed;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background-color: white;
+    /* backdrop-filter: blur(5px); */
+    box-shadow: 2px 2px 5px 5px rgba(5, 5, 5, 0.15);
+    border-radius: 10px;
+    z-index: 13;
+    transition: visibility 0.1s;
+    visibility: hidden;
+}
+
+#showLogin .close-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#showLogin .logo{
+    margin-left: 50px;
+    font-size: 15px;
+}
+#showLogin .logo h1{
+    font-weight: 620;
+    color: black;
+}
+#showLogin .logo b{
+    color: chocolate;
+}
+#showLogin span{
+    color: grey;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+#showLogin .form .form-element{
+    margin: 15px 0px;
+}
+
+#showLogin .form .form-element label{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+#showLogin .form .form-element p{
+    color: red;
+    font-size: 15px;
+    /* visibility: hidden; */
+    display: none;
+}
+
+#showLogin .form .form-element input[type="text"],
+#showLogin .form .form-element input[type="password"]{
+    margin: 5px;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 8px 5px;
+}
+
+#showLogin .form .form-element input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+#showLogin .form .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#showLogin .form .form-element a{
+    text-align: right;
+    text-decoration: none;
+    color: rgb(84, 136, 185);
+    text-transform: capitalize;
+    margin-left: 64px;
+}
+
+#showLogin .form .form-element a:hover{
+    color: teal;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* password reset */
+
+#showLoginP{
+    position: fixed;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 5pxb rgb(0,0,0,0.15);
+    border-radius: 10px;
+    z-index: 13;
+    /* transition: transform 1.5s, top 1.5s; */
+    visibility: hidden;
+}
+
+#showLoginP .close-buttonP{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#showLoginP .logo{
+    margin-left: 50px;
+    font-size: 15px;
+}
+#showLoginP .logo h1{
+    font-weight: 620;
+    color: black;
+}
+#showLoginP .logo b{
+    color: chocolate;
+}
+#showLoginP span{
+    color: grey;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+#showLoginP .formP .form-elementP{
+    margin: 15px 0px;
+}
+
+#showLoginP .formP .form-elementP label{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+#showLoginP .formP .form-elementP input[type="text"],
+#showLoginP .formP .form-elementP input[type="password"]{
+    margin: 5px;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 8px 5px;
+}
+
+#showLoginP .formP .form-elementP input[type="checkbox"]{
+    font-size: 20px;
+}
+
+#showLoginP .formP .form-elementP button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+/* .signup */
+#showLogin2{
+    position: fixed;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 5pxb rgb(0,0,0,0.15);
+    border-radius: 10px;
+    z-index: 13;
+    /* transition: transform 1.5s, top 1.5s; */
+    visibility: hidden;
+}
+
+#showLogin2 .close-button2{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#showLogin2 .logo{
+    margin-left: 50px;
+    font-size: 15px;
+}
+#showLogin2 .logo h1{
+    font-weight: 620;
+    color: black;
+}
+#showLogin2 .logo b{
+    color: chocolate;
+}
+#showLogin2 span{
+    color: grey;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+#showLogin2 .form2 .form-element2{
+    margin: 15px 0px;
+}
+
+#showLogin2 .form2 .form-element2 label{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+#showLogin2 .form2 .form-element2 input[type="text"],
+#showLogin2 .form2 .form-element2 input[type="password"]{
+    margin: 3px;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px 5px;
+}
+
+#showLogin2 .form2 .form-element2 input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+#showLogin2 .form2 .form-element2 button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#showLogin2 .form2 .form-element2 a{
+    padding-left: 250px;
+    text-decoration: none;
+    color: rgb(84, 136, 185);
+    text-transform: capitalize;
+}
+
+#showLogin2 .form2 .form-element2 a:hover{
+    color: teal;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* .testimony2 */
+
+#testimony2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    position: absolute;
+    display: none;
+}
+#testimony2 div{
+    height: 545px;
+    width: 400px;
+    background-color: white;
+    border-bottom: none;
+    z-index: 0;
+    margin-top: 175px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 10px;
+}
+#testimony2 img{
+    height: 250px;
+    width: 250px;
+    border-radius: 200px;
+    margin-top: 14px;
+    margin-left: 75px;
+    opacity: 1;
+}
+#testimony2 p{
+    padding-top: 1px;
+    padding-left: 25px;
+    padding-right: 26px;
+    text-align: justify;
+}
+#testimony2 #first-text{
+padding-top: 60px;
+}
+#testimony2 #second-text{
+    padding-top: 15px;
+    }
+#testimony2 #more-button{
+    padding: 7px 13px;
+    background-color: rgb(4, 1, 19);
+    color: white;
+    margin-left: 40px;
+    border-radius: 9px;
+    margin-top: 12px;
+    display: block;
+}
+#testimony2 #more-button:hover{
+    background-color: rgb(4, 2, 12);
+    cursor: pointer;
+    color: rgb(209, 202, 202);
+}
+
+@media only screen and (max-width: 1250px){
+    .ten{
+        height: 2000px;  
+    }
+    .ten .testimony1 #second-text{
+        padding-top: 5px;
+        font-size: 18px;
+        }
+    .ten .testimony1 {
+        display: block;
+    }
+    .ten .testimony1 div{
+        width: 370px;
+        margin-left: 10px;
+    }
+    .eleven .diet-tips img{
+        margin-left: 20px;
+        width: 300px;
+    }
+    .eleven .diet-tips p{
+        padding-left: 10px;
+        padding-top: 180px;
+    }
+}
+@media only screen and (max-width: 1302px)
+{
+    .eight .services-list .service-one .texts h3{
+        padding-left: 35px;
+        font-size: 25px;
+    }
+    .eight .services-list .service-one .texts p{
+        padding-left: 20px;
+        font-size: 21px;
+    }
+    .eight .services-list .service-one .image1{
+        width: 250px;
+        height: 250px;
+    }
+
+    .eight .services-list .service-two .texts h3{
+        padding-right: 35px;
+        font-size: 25px;
+    }
+    .eight .services-list .service-two .texts p{
+        padding-right: 20px;
+        font-size: 21px;
+    }
+    .eight .services-list .service-two .image1{
+        width: 250px;
+        height: 250px;
+    }
+
+    .eight .services-list .service-three .texts h3{
+        padding-left: 35px;
+        font-size: 25px;
+    }
+    .eight .services-list .service-three .texts3 p{
+        padding-left: 20px;
+        font-size: 21px;
+    }
+    .eight .services-list .service-three .image3{
+        width: 250px;
+        height: 250px;
+    }
+   .nine{
+       height: 1900px;
+   }
+    .nine #about{
+        margin-top: 280px;
+    }
+
+}
+
+
+@media only screen and (max-width:1170px)
+{
+    .nav #times{
+        display: block;
+        float: right;
+    }
+     #icon{ 
+        width: 30px;
+        height: 30px;
+        font-size: 35px;
+        cursor: pointer;
+        /* display: block; */
+        float: right;
+     }
+      .one .nav{  
+        width: 100%;
+        margin-right: 10px;
+        display: block;
+        line-height: 60px;
+    }
+    .one .nav .logo,
+    .one .nav span{
+        padding-left: 20px;
+        line-height: 30px;
+    }
+    #listing{
+        width: 100%;
+        display: block;
+        text-align: center;
+        background-color: grey;
+        z-index: 30;
+        /* display: none; */
+     } 
+    .nav ul li:hover{
+        border-bottom: 1px solid white;
+        border-top: 1px solid antiquewhite;
+        transition: .5s;
+    }
+    #toggle:checked + #listing{
+        display: block;
+    }
+    .two{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .two .info1{
+        width: 100%;
+    }
+    .two .info1 p{
+        font-size: 34px;
+        text-shadow: 1px white;
+    }
+    .two .info1 p span{
+        font-size: 26px;
+    }
+        .five .food-list .menu:hover{
+            color: wheat;
+            letter-spacing: 3px;
+        }
+        .five .food-list .grid-container{
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+           gap: 10px;
+           padding: 15px 10px;
+        }
+        .five .food-list .grid-container >div{
+            background-color: white;
+            border-radius: 18px; 
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 10px;
+        }
+        .five .food-list .grid-container >div img{
+            height: 230px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 18px;
+            transition: 1s;
+        }
+        .five .food-list .grid-container >div img:hover{
+           height: 245px;
+        }
+
+        .six{
+            height: 900px;
+        }
+
+        .seven{
+            height: 270px;
+            width: 100%;
+            margin-top: 250px;
+        }
+        .seven .subscribe h1{
+            font-size: 43px;
+            letter-spacing: 4px;
+            line-height: 45px;
+        }
+        .seven .subscribe h1 span{
+            font-size: 21px;
+            letter-spacing: 1px;
+            padding-left: 22px;
+        }
+        .seven select,
+        .seven input,
+        .seven button{
+            padding: 20px 20px;
+            border: none;
+        }
+        .seven #checkbox{
+            display: block;
+            margin: 20px 8px;
+        }
+        .seven #checkbox input{
+            height: 24px;
+            width: 24px;
+        }
+        .eight{
+            height: 1600px;
+        }
+        .eight .services-list .service-one .texts h3{
+            padding-left: 30px;
+            font-size: 20px;
+        }
+        .eight .services-list .service-one .texts p{
+            padding-left: 15px;
+            font-size: 18px;
+        }
+        .eight .services-list .service-one .image1{
+            width: 220px;
+            height: 220px;
+            border-radius: 220px;
+            margin-top: 70px;
+        }
+
+        .eight .services-list .service-two .texts2 h3{
+            padding-right: 30px;
+            font-size: 20px;
+        }
+        .eight .services-list .service-two .texts2 p{
+            padding-right: 15px;
+            font-size: 18px;
+        }
+        .eight .services-list .service-two .image2{
+            width: 220px;
+            height: 220px;
+            border-radius: 220px;
+            margin-top: 70px;
+        }
+
+        .eight .services-list .service-three .texts3 h3{
+            padding-right: 30px;
+            font-size: 20px;
+        }
+        .eight .services-list .service-three .image3{
+            margin-top: 78px;
+        }
+
+        .nine{
+            height: 2300px;
+        }
+        .nine .about-info .logo img{
+            position: absolute;
+            right: 335px;
+        }
+        
+         .nine #about{
+             margin-top: 300px;
+             margin-bottom: 50px;
+         }
+
+         .nine .about-info .image img{
+             width: 350px;
+             margin-left: 50px;
+         }
+         .nine .about-info2 .image2 img{
+            width: 350px;
+            margin-left: 50px;
+         }
+    }
+
+    @media only screen and (max-width:830px)
+    {
+     
+        .two .info1 p{
+            font-size: 30px;
+            text-shadow: 1px white;
+        }
+        .two .info1 p span{
+            font-size: 20px;
+        }
+        
+    }
+
+    @media only screen and (max-width:700px)
+    {
+     
+        .two .info1 p{
+            font-size: 25px;
+            text-shadow: 1px white;
+        }
+        .two .info1 p span{
+            font-size: 20px;
+        }
+        .seven .subscribe h1{
+            color: white;
+            font-size: 22px;
+            letter-spacing: 4px;
+            line-height: 45px;
+            padding-left: 3px;
+        }
+        .seven .subscribe h1 span{
+            display: block;
+            font-weight: lighter;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: black;
+            padding-left: 22px;
+            /* word-spacing: normal; */
+        }
+        .seven .subscribe{
+            padding-left: 3px;
+        }
+        .seven select,
+        .seven input,
+        .seven button{
+            padding: 20px 9px;
+            border: none;
+        }
+        .seven button{
+            background-color: rgb(44, 28, 28);
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 1s;
+        }
+        .seven #checkbox{
+            display: block;
+            margin: 20px 8px;
+        }
+        .seven #checkbox input{
+            height: 24px;
+            width: 24px;
+        }
+        .seven #checkbox span{
+            color: rgb(228, 188, 188);
+        }
+        .seven #checkbox span a{
+            color: white;
+        }
+        .eight .services-list .service-one .texts h3{
+            text-align: left;
+        }
+        .eight .services-list .service-one .image1{
+            margin-top: 200px;
+            display: none;
+        }
+        .eight .services-list .service-two .image2{
+        margin-top: 200px;
+        display: none;
+}
+.eight .services-list .service-two .texts2{
+    margin-top: 30px;
+    text-align: justify;
+    padding-left: 3px;
+}
+.eight .services-list .service-three{
+    margin-top: 160px;
+}
+.eight .services-list .service-three .texts3 h3{
+    text-align: justify;
+}
+.eight .services-list .service-three .image3{
+    margin-top: 200px;
+    display: none;
+}
+
+    }
+
+    @media only screen and (max-width:865px)
+    {
+
+        .three .search-button input[type="search"],
+        .three .search-button input[type="submit"]{
+            margin-top: 8px;
+        }
+        .three .search-button input[type="search"]{
+            width: 270px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            padding: 8px 10px;
+            margin-right: 3px;
+        }
+        .three .search-button input[type="submit"]{
+            width: 100px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            padding: 4px 15px;
+            border-radius: 8px;
+            background-color: rgb(241, 241, 240);
+            border: 1px solid rgb(122, 72, 36);
+            margin-right: 2px;
+            transition: 1s;
+        }
+        
+        .five{
+            width: 100%;
+            height: 2340px;
+            /* margin-bottom: 1400px; */
+        }
+
+        .five .food-list .grid-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 15px 10px;
+         }
+         .five .food-list .grid-container >div{
+             background-color: white;
+             border-radius: 18px; 
+             cursor: pointer;
+             font-family: 'Times New Roman', Times, serif;
+             padding-left: 10px;
+         }
+         .five .food-list .grid-container >div img{
+             height: 230px;
+             width: 100%;
+             object-fit: cover;
+             border-radius: 18px;
+             transition: 1s;
+         }
+         .five .food-list .grid-container >div img:hover{
+            height: 245px;
+         }
+         .six{
+             height: 1700px;
+         }
+         .six .procedures{
+             display: block;
+             margin-left: 180px;
+         }
+         .six .procedures .call img{
+            opacity: 0.9;
+        }
+        .six .procedures .call h3{
+            color: black;
+        }
+
+        .seven{
+            height: 470px;
+            width: 100%;
+            background-color: rgb(209, 97, 46);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .seven .subscribe h1{
+            color: white;
+            font-size: 28px;
+            letter-spacing: 4px;
+            line-height: 45px;
+            padding-left: 3px;
+        }
+        .seven .subscribe h1 span{
+            display: block;
+            font-weight: lighter;
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: black;
+            padding-left: 22px;
+            /* word-spacing: normal; */
+        }
+        .seven .subscribe{
+            padding-left: 3px;
+        }
+        .seven select,
+        .seven input,
+        .seven button{
+            padding: 20px 9px;
+            border: none;
+        }
+        .seven button{
+            background-color: rgb(44, 28, 28);
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 1s;
+        }
+        .seven button:hover{
+            background-color: rgb(71, 56, 56);
+            /* color: black; */
+        }
+        .seven #checkbox{
+            display: block;
+            margin: 20px 0px;
+        }
+        .seven #checkbox input{
+            height: 24px;
+            width: 24px;
+        }
+        .seven #checkbox span{
+            color: rgb(228, 188, 188);
+            font-size: 16px;
+        }
+        .seven #checkbox span a{
+            color: white;
+        }
+         
+
+    }
+
+    @media only screen and (max-width:1000px){
+        .nine{
+            height: 2300px;
+        }
+        .nine .about-info .logo img{
+            position: absolute;
+            right: 335px;
+        }
+        
+         .nine #about{
+             margin-top: 800px;
+             margin-bottom: 50px;
+         }
+
+         .nine .about-info .image img{
+             width: 250px;
+             margin-left: 20px;
+         }
+         .nine .about-info2 .image2 img{
+            width: 250px;
+            height: 280px;
+            margin-left: 5px;
+            margin-right: 10px;
+         }
+         .eleven{
+             height: 2500px;
+         }
+         .eleven .diet-tips{
+             display: block;
+         }
+         .eleven .diet-tips img{
+            margin-left: 25px;
+            width: 240px;
+        }
+        .eleven .diet-tips p{
+            padding-left: 10px;
+            padding-top: 80px;
+        }
+        .eleven .footer-list{
+            display: block;
+            margin-top: 440px;
+            margin-left: 20px;
+        }
+    }
+    @media only screen and (max-width:783px){
+        .six .procedures .call img{
+            opacity: 0.9;
+        }
+        .six .procedures .call h3{
+            color: black;
+        }
+        .seven select,
+        .seven input,
+        .seven button{
+            width: 200px;
+            font-size: 12px;
+            padding: 20px 4px ;
+    }
+    .seven .subscribe h1{
+        color: white;
+        font-size: 17px;
+        letter-spacing: 4px;
+    }
+    .seven .subscribe h1 span{
+        display: block;
+        font-weight: lighter;
+        font-size: 10px;
+        letter-spacing: 1px;
+        color: black;
+        padding-left: 22px;
+        /* word-spacing: normal; */
+    }
+    .seven .subscribe{
+        padding-left: 2px;
+    }
+    .seven button{
+        background-color: rgb(44, 28, 28);
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 1s;
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    .seven button:hover{
+        background-color: rgb(71, 56, 56);
+        /* color: black; */
+    }
+    .seven #checkbox input{
+        height: 15px;
+        width: 15px;
+    }
+    .seven #checkbox span{
+        color: rgb(228, 188, 188);
+        font-size: 11px;
+    }
+    .seven #checkbox span a{
+        color: white;
+    }
+    .eight .services-list .service-one .image1{
+        margin-top: 20px;
+    }
+
+    .nine{
+            height: 2600px;
+        }
+        .nine .about-info .logo img{
+            position: absolute;
+            right: 335px;
+        }
+        
+         .nine #about{
+             margin-top: 900px;
+             margin-bottom: 50px;
+         }
+         .nine .about-info .image img{
+             width: 180px;
+             margin-left: 50px;
+         }
+         .nine .about-info2 .image2 img{
+            width: 180px;
+            margin-left: 5px;
+            margin-right: 10px;
+         }
+
+}
+
+    @media only screen and (max-width:670px)
+    {
+     
+        .two .info1 p{
+            font-size: 20px;
+            text-shadow: 1px white;
+            padding-left: 3px;
+        }
+        .two .info1 p span{
+            font-size: 15px;
+        }
+
+        .five .food-list .grid-container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            padding: 15px 10px;
+         }
+         .five .food-list .grid-container >div{
+             background-color: white;
+             border-radius: 18px; 
+             cursor: pointer;
+             font-family: 'Times New Roman', Times, serif;
+             padding-left: 10px;
+         }
+         .five .food-list .grid-container >div img{
+             height: 230px;
+             width: 100%;
+             object-fit: cover;
+             border-radius: 18px;
+             transition: 1s;
+         }
+         .five .food-list .grid-container >div img:hover{
+            height: 245px;
+         }
+        .six{
+            height: 1800px;
+        }
+        .six .procedures .call img{
+            opacity: 0.9;
+        }
+        .six .procedures .call h3{
+            color: black;
+        }
+
+        .seven select,
+        .seven input,
+        .seven button{
+            width: 200px;
+            font-size: 12px;
+            padding: 20px 2px ;
+    }
+    .seven .subscribe h1{
+        color: white;
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+    .seven .subscribe h1 span{
+        display: block;
+        font-weight: lighter;
+        font-size: 12px;
+        letter-spacing: 1px;
+        color: black;
+        padding-left: 3px;
+        /* word-spacing: normal; */
+    }
+    .seven .subscribe{
+        padding-left: 2px;
+    }
+    .seven button{
+        background-color: rgb(44, 28, 28);
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .seven button:hover{
+        background-color: rgb(71, 56, 56);
+        /* color: black; */
+    }
+    .seven #checkbox input{
+        height: 15px;
+        width: 15px;
+    }
+    .seven #checkbox span{
+        color: rgb(228, 188, 188);
+        font-size: 12px;
+    }
+    .seven #checkbox span a{
+        color: white;
+    }
+    .eight .eight-heading h2{
+        padding-left: 3px;
+        font-size: 25px;
+    }
+    .eight .services-list .service-one .texts h3{
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    .eight .services-list .service-one .texts p{
+        padding-left: 10px;
+        font-size: 18px;
+        width: 350px;
+        text-align: justify;
+    }
+    .eight .services-list .service-one .image1{
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+        margin-top: 200px;
+        margin-right: 10px;
+        visibility: hidden;
+    }
+
+    .nine{
+        height: 3100px;
+    }
+    .nine .about-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nine .about-info2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nine .about-info .image img{
+        height: 300px;
+        width: 370px;
+        margin-left: 4px;
+        margin-bottom: 20px;
+    }
+    .nine .about-info2 .image2 img{
+        height: 300px;
+        width: 370px;
+        margin-left: 4px;
+        margin-bottom: 20px;
+    }
+    .nine .about-info .text{
+        margin-left: 15px;
+    }
+    .nine #about{
+        margin-top: 930px;
+    }
+    .nine .about-info2 .text2{
+        padding-left: 8px;
+    }
+    .eleven .diet-tips p{
+        width: 370px;
+    }
+    .eleven .end ul li{
+        margin-right: 2px;
+        font-size: 13px;
+        margin-left: 8px;
+    }
+    }
+    @media (max-width:590px){
+        .six{
+            height: 1800px;
+        }
+        .six .procedures{
+            display: block;
+            margin-left: 35px;
+        }
+        .six .procedures .call img{
+            opacity: 0.9;
+        }
+        .six .procedures .call h3{
+            color: black;
+        }
+    }
+
+.four .images #img2 p span{
+    color: chocolate;
+    display: block;
+    padding-left: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+ .four .images #vertical{
+     margin-top: 20px;
+     height: 150px;
+     width: 3px;
+     z-index: 2;
+ }
+ .four .images .vertical{
+     height: 15px;
+     width: 1px;
+     margin-bottom: 11px;
+     border: 1px dotted white;
+     background-color: white;
+     margin-left: 150px;
+ }
+.three .search-button input[type="text"]{
+    width: 450px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    background-color: rgb(241, 241, 240);
+    border: 1px solid white;
+    margin-right: 15px;
+}
+}
+/* .open-showLogin{ */
+    /* top: 50%; */
+    /* transform: translate(-50%,-50%) scale(1); */
+    /* visibility: visible; */
+/* } */
+
+
+

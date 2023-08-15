@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> E-Marketing I.T Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon (1).ico" type="image/x-icon">
+</head>
+<body onscroll="closeLogin(), closeLogin2(), closePassReset()">
+    <section class="one">
+        <!-- navbar -->
+        <div class="nav">
+            <!-- logo -->
+            <label id="times" onclick="closeList()" title="Tap to close">&times;</label>
+            <label for="toggle" id="icon" onclick="openList()" title="Tap to open menu">&#9776</label>
+            <input type="checkbox" id="toggle"/>
+            <div class="logo"><h1><i class="fa fa-cutlery" aria-hidden="true"></i>Foo<b>dExpress</b><i class="fa fa-shopping-cart" aria-hidden="true"></i></h1><span>top-notch & reliable..</span></div>
+            <!-- unordered list -->
+            <ul id="listing">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#menu" title="Hello! Click here to see a list of food ready for now.">Menu</a></li>
+                <li><a href="#guidelines" title="Follow these simple steps to get started">Guidelines</a></li>
+                <li><a href="#services" title=" We're bothered about your taste. Update yourself with all we offer.">Services</a></li>
+                <li><a href="#about-us" title="It's worthwhile to know about us. Click here to do that.">About Us</a></li>
+                <li><a href="#testimonials" title="We're top-notch, & reliable. It's attestable. Find out from our esteemed customers.">Testimonials</a></li>
+                <button type="button" class="login" onclick="openLogin()">Login</button>
+            <button class="signup" type="submit" onclick="openLogin2()">Sign Up</button>
+            </ul>
+            <!-- nav buttons -->
+        </div>
+    </section>
+
+    <section class="two" id="home">
+        <div class="info1">
+            <p>Hey! Order your best food here, anytime.<span>Try this pocket-friendly deal. We deliver at your door-step!</span></p>
+        </div>
+    </section><br>
+    <section class="three">
+        <div class="info">
+        <div class="search-button">
+        <input type="search" placeholder="Quick search! Search available food here.." name="text" >
+        <input type="submit" value="Check" name="submit">
+    </div>
+</section>
+        </div>
+
+    <!-- <section class="four">
+        <div class="images">
+            <div id="img1"><img src="images/food21.jpg" alt="">
+                <div id="vertical">
+                    <div class="vertical"></div>
+                 <div class="vertical"></div>
+                 <div class="vertical"></div>
+                 <div class="vertical"></div>
+                 <div class="vertical"></div>
+                 </div>
+            </div>
+            <div id="img2"><img src="images/delivery13.jpg" alt="">
+            <div class="striaght-line"></div>
+            <div class="striaght-line"></div>
+            <div class="striaght-line"></div>
+            <p class="info">quick & reliable delivery <span>at your door-step!</span></p>
+            </div>
+            <h2>craving something?<span class="more">Let's be the link between your taste, and reality<span class="symbol">..</span></span></h2>
+            <input type="text" class="input1" placeholder="let's know your location">
+            <input type="button" class="input2" value="contact our dispatch riders"> 
+            <div class="button-info">
+                <img src="images/location1.png" id="location" alt="">
+                <img src="images/phonecalls.png" id="call" alt="">
+            </div>
+        </div>
+        <div class="right-info1">
+            <div class="right-info2">
+            <div class="right-info">
+            <img src="images/ordering3.jpg" id="customer1" alt="">
+            <img src="images/ordering2.jpg" id="customer2" alt="">
+            <img src="images/service8.jpg" id="customer3" alt="">
+            </div>
+        </div>
+        </div>
+
+        <div id="summary">
+        <div class="logo"><h1><i class="fa fa-cutlery" aria-hidden="true"></i>Foo<b>dExpress</b><i class="fa fa-shopping-cart" aria-hidden="true"></i></h1><span>top-notch & reliable..</span></div>
+    </div>
+
+    </section> -->
+    <section class="five" id="menu">
+        <div class="food-list">
+    <h2 class="menu">Food-list</h2>
+    <div class="grid-container">
+        <div> <img src="images/service10.jpg" alt=""><h2>Fufu & egusi</h2> </div>
+        <div> <img src="images/food2.jpg" alt=""> <h2>Burger/Shawarmma/Pizza</h2> </div>
+        <div> <img src="images/food9.jpg" alt=""> <h2>Ofe Owerri</h2> </div>
+        <div> <img src="images/service13.jpg" alt=""> <h2>Ofada rice</h2> </div>
+        <div> <img src="images/food13.jpg" alt=""> <h2>Fried rice</h2> </div>
+        <div> <img src="images/food12.jpg" alt=""> <h2>Jollof rice</h2> </div>
+        <div> <img src="images/service1.jpg" alt=""> <h2>Sallad</h2> </div>
+        <div> <img src="images/food8.png" alt=""> <h2>All combo</h2> </div>
+    </div>
+    </div>
+    </section>
+    <section class="six" id="guidelines">
+            <h2>How it works</h2>
+            <div class="procedures">
+        <div class="call">
+            <img src="images/phonecall2.png" alt="">
+            <h3>In need our service? Kindly notify us.</h3>
+        </div>
+        <div class="location">
+            <img src="images/location3.png" alt="">
+            <h3>Set delivery location</h3>
+            <p>Select the location where you want us to deliver.</p>
+        </div>
+    <div class="pick">
+        <img src="images/new1.png" alt="">
+        <h3>Choose the product</h3>
+        <p>Pick what you want, let's reach out to you.</p>
+</div>
+<div class="recieved">
+    <img src="images/shoppingcart1.png" alt="">
+    <h3>Receive at your door-step</h3>
+    <p>Your order will be delivered to you in no time.</p>
+</div>
+</div>
+    </section>
+    <section class="seven">
+        <div class="subscribe">
+            <h1>Subscribe to our newsletter today!<span>Don't miss our great offers & Recieve deals from all top vendors via e-mail</span></h1>
+            <select id="states" name="states" form="states">
+                <option value="saab"><b>Select popular city</b></option>
+                <option value="city" disabled><b>Popular city</b></option>
+                <option value="Abuja">ABUJA</option>
+                <option value="lagos">LAGOS</option>
+                <option value="uyo">AKWA-IBOM</option>
+                <option value="kano">KANO</option>
+                <option value="nnewi">ANAMBRA</option>
+                <option value="ph">PORTHARCOURT</option>
+                <option value="delta">DELTA</option>
+                <option value="benin">EDO</option>
+
+                <option value="city" disabled><b>More cities</b></option>
+                <option value="enugu">ENUGU</option>
+                <option value="imo">OWERRI</option>
+                <option value="ebonyi">ABAKALIKI</option>
+                <option value="benue">MAKURDI</option>
+                <option value="jos">JOS</option>
+                <option value="ondo">AKURE</option>
+                <option value="osun">OSOGBO</option>
+                <option value="calabar">CALABAR</option>
+                <option value="niger">MINNA</option>
+                <option value="oyo">IBADAN</option>
+                <option value="ekiti">ADO-EKITI</option>
+                <option value="yola">YOLA</option>
+                <option value="enugu">NSUKKA</option>
+                <option value="lagos">LEKKI</option>
+                <option value="bayelsa">BAYELSA</option>
+                <option value="zaria">ZARIA</option>
+              </select>
+
+              <input type="email" placeholder="Input your E-mail here..">
+
+              <button type="submit" name="button">SUBSCRIBE NEWSLETTER</button>
+              <div id="checkbox"><input type="checkbox" checked> <span>I have read, understood, and accepted the <a href="">Terms and conditions</a> and the <a href="">Privacy policy</a>.</span></div>
+        </div>
+    </section>
+
+    <section class="eight" id="services">
+        <div class="eight-heading">
+        <h2>What do we do here <p id="question" >??</p></h2> 
+    </div>
+    <div class="services-list">
+       <div class="service-one">
+           <div class="texts">
+        <h3>Make good food available for prospective customers</h3>
+        <p>Our website serves delicious food, crafted with care and passion, using the finest ingredients. Our skilled chefs meticulously create dishes using these ingredients, ensuring every bite is bursting with flavor. Each dish is thoughtfully prepared to bring you a mouthwatering culinary experience that will leave you craving for more.</p></div> 
+        <div class="image1"></div> </div>
+
+        <div class="service-two">
+                <div class="image2"></div>
+                <div class="texts2">
+                    <h3>Quick delivery of ordered foods</h3>
+                    <p>Experience the convenience of our lightning-fast delivery service that brings your favorite food directly to your doorstep. With our dedicated team of delivery professionals, we prioritize promptness and reliability, ensuring that your order reaches you fresh and hot, ready to be savored without any unnecessary waiting. Sit back, relax, and let us bring culinary delight to your home in record time.</p></div>
+                </div>
+
+                <div class="service-three">
+                    <div class="texts3">
+                        <h3>event planning & catering services</h3>
+                        <p>With our event planning and catering services, we turn your special occasions into unforgettable experiences. Our dedicated team of event experts meticulously plans and coordinates every detail, ensuring a seamless and remarkable event. Trust us to deliver impeccable service, creating memories that will be cherished for a lifetime.</p></div>
+                <div class="image3"></div></div>
+                </div>
+    </section>
+    
+    <section class="nine" id="about-us" >
+        <div class="about-heading">
+            <h3>about us</h3>
+        </div>
+        <div class="about-info">
+            <div class="logo"> <img src="images/home1.jpg" alt=""> </div>
+            <div class="image"><img src="images/Ali.webp" alt=""></div>
+            <div class="text">
+                <h1>food<span>Express</span> hospitality limited</h1>
+                <p>We are a leading food vendor and delivery platform, dedicated to providing delicious meals conveniently to your doorstep. With our passion for great food and commitment to exceptional service, we aim to satisfy your cravings and make dining a delightful experience.</p> <br>
+
+                   <p>At our food vendor and delivery website, we have carefully curated a diverse menu, featuring a wide range of cuisines and flavors. From hearty comfort food to exotic international dishes, we have something to suit every palate and dietary preference. Our talented team of chefs and culinary experts work tirelessly to ensure that each dish is prepared with the finest ingredients, bursting with flavor and freshness.</p><br>
+                    </div>
+                    
+        </div>
+        <p id="about">Convenience is at the heart of our service. Through our user-friendly website and mobile app, you can effortlessly browse our menu, place your order, and have it delivered straight to your door. We have partnered with reliable delivery providers to ensure prompt and secure delivery, so you can enjoy your meal hassle-free.</p>
+
+           <div class="about-info2">
+            <div class="image2"><img src="images/eating.jpg" alt=""></div>
+            <div class="text2">
+                <!-- <h1>where yo<span>u can</span> find us</h1> -->
+                <p>Our journey started in April 20, 2012. Incorperated as FoodExpress Hospitality Limited, our first branch opened in August 15, 2012, at Egbeda, Lagos. Since then, more have been opened, with more in the pipeline.</p> <br>
+
+                   <p>
+                    Customer satisfaction is our top priority. We value your feedback and constantly strive to improve our offerings and services. Our dedicated customer support team is always ready to assist you with any inquiries, ensuring a smooth and enjoyable ordering experience.
+            <br> <br>
+                    Whether you're looking for a quick lunch, a family dinner, or catering for a special event, we have you covered. Join us on our culinary journey and let us tantalize your taste buds with our delectable creations. Experience the convenience and delight of our food vendor and delivery website today.
+                   </p>
+                   <div class="messages">
+                      <img src="images/whatsapp.png" alt="">
+                      <img src="images/twitter.png" alt="">
+                      <img src="images/instagram.webp" alt="">
+                      <img src="images/facebook.avif" alt="">
+                      <img src="images/mail.jpg" alt="">
+                   </div>
+                    </div>
+    </section>
+
+    <section class="ten" id="testimonials">
+        <div class="testimony1">
+            <div class="one">
+                <img src="images/testify.webp" class="images1" alt="">
+                <p id="first-text">
+                   Hi! I am <b>Shola,</b> from <b>Lagos, Nigeria</b>. Here with me is my sister, <b>Aderonke</b>. In fact, FoodExpress is really the best I have seen and heard of so far. Their services are awesome. Do well to patronize them if you really want the best!
+                </p>
+            </div>
+            <div class="three">
+                <img src="images/testify2.avif" class="images2" alt="">
+                <p id="second-text">
+                   One thing I admire most about FoodExpress, is how reliable they are. Someone first introduced their food delivery website to my friend. My friend loved it & introduced it to his colleagues at work, and I. 
+                   <br><br>  We haven't regretted knowing about their services. I will surely introduce more people to their platforms. I am <b>Ejiro, </b>from <b>Edo state, Nigeria</b>.
+                </p>
+            </div>
+        <div class="three" id="three">
+            <img src="images/testify3.jpg" class="images3" alt="">
+            <p id="third-text">
+                Good day. I am <b>Emmanuel,</b> from <b>Nnewi, Anambra state, Nigeria</b>. My friends call me <b>Emzy</b>.
+                FoodExpress is no doubt one of the best food vendor & delivery service in Nigeria. They indeed equal "top-notch & reliable".<br><br>
+                Because of their responsibleness, it's a must for one to introduce their services to one's loved-ones.
+                    <!-- <button id="more-button" type="button" onclick="moreTestimony()">See More</button> -->
+            </p>
+        </div>
+    </div>
+    </section>
+
+        <section class="eleven">
+        <div class="diet-tips">
+<img src="images/diet tips.jpg" alt="">
+<p>Welcome to our comprehensive collection of food healthy tips, where we delve into the art of nourishing your body and soul. Our mission is to guide you on a transformative journey towards optimal well-being through the power of mindful eating and informed choices. Explore a treasure trove of insights, from selecting nutrient-rich ingredients to creating delectable, balanced recipes. Embrace the joy of savoring each bite while embracing a lifestyle that celebrates both health and flavor. Join us in making positive, lasting changes for a vibrant and energetic life. <a href="">Click here to get our healthy diet tips.</a> </p>
+        </div>
+
+        <div class="footer-list">
+            <div class="list-one">
+                <ul>
+                    <li id="images"> <img src="images/service13.jpg" alt=""> </li>
+                    <li id="heading">Food vendors</li>
+                    <li>menu</li>
+                    <li>about us</li>
+                   <li>services</li>
+                </ul>
+            </div>
+
+            <div class="list-two">
+                <ul>
+                    <li id="images"> <img src="images/about us5.jpg" alt=""> </li>
+                    <li id="heading">event planning</li>
+                    <li>how it works</li>
+                    <li>about us</li>
+                   <li>rentals</li>
+                </ul>
+            </div>
+
+            <div class="list-three">
+                <ul>
+                    <li id="images"> <img src="images/delivery12.jpg" alt=""> </li>
+                    <li id="heading">Delivery services</li>
+                    <li>guidelines</li>
+                    <li>need help?</li>
+                   <li>Any observation? Drop your feedback.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="end">
+            <div class="logo"><h1><i class="fa fa-cutlery" aria-hidden="true"></i>Foo<b>dExpress</b><i class="fa fa-shopping-cart" aria-hidden="true"></i></h1><span>top-notch & reliable..</span></div>
+
+            <ul>
+                <li>twitter</li>
+                <li>facebook</li>
+                <li>linkedIn</li>
+                <li>youtube</li>
+                <li>pinterest</li>
+                <li>instagram</li>
+            </ul>
+        </div>
+
+        <div class="copyright-info">
+            <p> <b>&copy;</b>copyright 2023 - foodexpress hospitality limited | <a href="#">privacy policy</a></p>
+        </div>
+    </section>
+
+    <!-- login & signup -->
+
+    <!-- login -->
+        <div class="showLogin" id="showLogin">
+            <div class="close-button" onclick="closeLogin()">&times;</div>
+
+            <div class="form">
+                <form action="#" onsubmit="return validateForm()">
+                <div class="logo"><h1><i class="fa fa-cutlery" aria-hidden="true"></i>Foo<b>dExpress</b><i class="fa fa-shopping-cart" aria-hidden="true"></i></h1><span>top-notch & reliable..</span></div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email..">
+                    <p id="loginError">Email required here. Type your email</p>
+                </div>
+
+                <div class="form-element">
+                    <label for="password">password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <p id="loginError">Password required. Type your password</p>
+                </div>
+
+                <div class="form-element">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember-me</label>
+                    <a href="#showLoginP" on onclick="passReset()">forgot password?</a>
+                </div>
+
+                <div class="form-element">
+                <button type="submit">login</button>
+                </div>
+
+                <div class="form-element">
+                    Are you new here?
+                    <a href="#showLogin2" onclick="openLogin2()">sign up</a>
+                </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- forgot password -->
+
+        <div class="showLoginP" id="showLoginP">
+            <div class="close-buttonP" onclick="closePassReset()">&times;</div>
+
+            <div class="formP">
+                <div class="logo"><h1><i class="fa fa-cutlery" aria-hidden="true"></i>Foo<b>dExpress</b><i class="fa fa-shopping-cart" aria-hidden="true"></i></h1><span>top-notch & reliable..</span></div>
+                <div class="form-elementP">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email..">
+                </div>
+
+                <div class="form-elementP">
+                    <label for="password">Verification code</label>
+                    <input type="password" id="password" placeholder="Enter Verification code sent to you">
+                </div>
+
+                <div class="form-elementP">
+                    <input type="checkbox" id="check">
+                    <label for="check">Get via Email</label>
+                    
+                    <input type="checkbox" id="check">
+                    <label for="check">text message</label>
+                </div>
+
+                <div class="form-elementP">
+                <button>Continue password reset</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- sign up -->
+
+        <div class="showLogin2" id="showLogin2">
+            <div class="close-button2" onclick="closeLogin2()">&times;</div>
+
+            <div class="form2">
+                <div class="logo"><h1><i class="fa fa-cutlery" aria-hidden="true"></i>Foo<b>dExpress</b><i class="fa fa-shopping-cart" aria-hidden="true"></i></h1><span>top-notch & reliable..</span></div>
+                <div class="form-element2">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email..">
+                </div>
+
+                <div class="form-element2">
+                    <label for="password">password</label>
+                    <input type="password" id="password" placeholder="Choose your prefered password">
+                </div>
+
+                <div class="form-element2">
+                    <label for="password">Confirm password</label>
+                    <input type="password" id="password" placeholder="Re-enter your password">
+                </div>
+
+                <div class="form-element2">
+                <button>submit</button>
+                </div>
+
+                <div class="form-element2">
+                    <a href="#showLogin" onclick="openLogin()">login</a>
+                </div>
+            </div>
+        </div>
+
+<!-- testimonials2 -->
+<!-- <div id="testimony2">
+    <div class="one">
+        <img src="images/eat2.jpg" class="images1" alt="">
+        <p id="first-text">
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima doloribus autem repudiandae dignissimos ab est quos exercitationem optio corrupti voluptatibus? Obcaecati iste voluptate officiis eius enim sunt, laboriosam recusandae quis?
+        </p>
+        <button id="more-button" type="button">Previous</button>
+    </div>
+    <div class="three">
+        <img src="images/service8.jpg" class="images2" alt="">
+        <p id="second-text">
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nemo vel repellat pariatur omnis ipsa voluptatibus quis minima, iusto dicta esse molestias sunt. Nostrum vitae nesciunt, rerum provident a eos repellendus ipsum quos aliquid, dolore sit rem beatae, expedita et.
+        </p>
+    </div>
+<div class="three">
+    <img src="images/eating.jpg" class="images3" alt="">
+    <p id="third-text">
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro animi omnis quaerat explicabo nam repellat iste numquam maiores, quasi ratione soluta, quisquam eveniet mollitia accusantium cum optio unde! Ut dignissimos perferendis aperiam molestias atque alias!
+    </p>
+</div>
+</div> -->
+
+        <script>
+            const showLogin = document.getElementById("showLogin");
+            const showLoginP = document.getElementById("showLoginP");
+            const showLogin2= document.getElementById("showLogin2");
+            const testimonials = document.getElementById("testimony2");
+
+            const emailValue = document.getElementById("email");
+            const passValue = document.getElementById("password");
+            const loginError = document.getElementById("loginError");
+            
+            const times = document.getElementById("times");
+            const icon = document.getElementById("icon");
+            const listing = document.getElementById("listing");
+
+function openLogin(){
+    showLogin.style.visibility = "visible";
+    showLogin2.style.visibility = "hidden";
+}
+
+function closeLogin(){
+    showLogin.style.visibility ="hidden";
+    passValue.value = "";
+    emailValue.value = "";
+}
+// password reset
+    function passReset(){
+        showLoginP.style.visibility = "visible";
+        showLogin.style.visibility = "hidden";
+    }
+
+    function closePassReset(){
+        showLoginP.style.visibility = "hidden";
+    }
+
+// sign up
+
+function openLogin2(){
+    showLogin2.style.visibility = "visible";
+    showLogin.style.visibility = "hidden";
+}
+
+function closeLogin2(){
+    showLogin2.style.visibility ="hidden";
+
+}
+
+function moreTestimony(){
+    testimonials.style.src = "#testimony2";
+    testimonials.style.display = "flex";
+}
+
+function closeList(){
+    listing.style.display = "none"
+    icon.style.display = "block";
+    times.style.display = "none";
+}
+
+function openList(){
+    listing.style.display = "block";
+    icon.style.display = "none"
+    times.style.display = "block";
+}
+// loginError
+
+// function loginError(){
+//     loginError.style.display = "block";
+// }
+
+// function validateForm(){
+
+// if (passValue == ""){
+
+// return false;
+// }
+
+// }
+
+
+        </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
