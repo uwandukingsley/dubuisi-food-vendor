@@ -2278,7 +2278,7 @@ padding-top: 60px;
     margin-right: 15px;
 }
 }
-@media (max-width:368px){
+/* @media (max-width:368px){
     body{
         margin: 0px 5px;
     }
@@ -2288,7 +2288,7 @@ padding-top: 60px;
     .nine #about{
         margin-top: 500px;
     }
-    }
+    } */
     
     
 
