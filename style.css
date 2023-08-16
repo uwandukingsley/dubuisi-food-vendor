@@ -2278,6 +2278,14 @@ padding-top: 60px;
     margin-right: 15px;
 }
 }
+@media (max-width:368px){
+    body{
+        margin: 0 0px;
+    }
+    .six .procedures {
+        margin-left: 5px;
+    }
+
 /* .open-showLogin{ */
     /* top: 50%; */
     /* transform: translate(-50%,-50%) scale(1); */
