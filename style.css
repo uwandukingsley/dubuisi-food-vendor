@@ -2278,7 +2278,7 @@ padding-top: 60px;
     margin-right: 15px;
 }
 }
-@media (max-width:200px){
+@media (max-width:368px){
     body{
         margin: 0px 5px;
     }
@@ -2286,7 +2286,7 @@ padding-top: 60px;
         margin-left: 5px;
     }
     .nine #about{
-        margin-top: 700px;
+        margin-top: 500px;
     }
     }
     
